@@ -37,6 +37,7 @@ function populatePossibleKs() {
     for (let i=0; i<infinity; i+=1) {
         zeros.push(findZeroFrom(RfromK, i, infinity))
     }
+    possibleKs = [];
     zeros.sort((a, b) => a-b);
     zeros.forEach(newK => {
         if (newK < 0) return;
