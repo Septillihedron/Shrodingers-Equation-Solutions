@@ -9,7 +9,7 @@ let sliders = {
 }
 
 function setup() {
-    createCanvas(1024, 1024);
+    createCanvas(512, 512);
     scale = 4.0/max(width, height);
     colorMode(HSB);
 
@@ -88,8 +88,8 @@ function graph(graphic) {
 
     noFill();
     stroke(0);
-    strokeWeight(16);
-    ellipse(width/2, height/2, 2*radius/scale+8, 2*radius/scale+8);
+    strokeWeight(4);
+    ellipse(width/2, height/2, 2*radius/scale+2, 2*radius/scale+2);
 }
 
 function setPixel(pixels, x, y, [r, g, b]) {
