@@ -12,6 +12,7 @@ function setup() {
     createCanvas(512, 512);
     scale = 4.0/max(width, height);
     colorMode(HSB);
+    pixelDensity(1);
 
     populateCartesianToPolarMap();
     populatePossibleKs();
